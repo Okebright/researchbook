@@ -241,15 +241,18 @@ label {
         flex-direction: column;
         align-items: start;
         row-gap: 1rem;
+        background-color: red;
     }
 
     .content {
         flex-direction: column;
         align-items: center;
+        flex-wrap: wrap;
+        row-gap: 1rem;
     }
 
     .card {
-        width: 50%;
+        width: 100%;
     }
 
     .modal {
@@ -257,13 +260,14 @@ label {
     }
 }
 
-@media screen and (max-width: 4800px) {
+@media  (max-width: 480px) {
    .header{
     padding: 2rem;
    }
 
    .content {
        padding: 2rem;
+       flex-wrap: wrap;
    }
 
    .card {
@@ -274,5 +278,4 @@ label {
     .modal {
         width: 90%;
     }
-    
 }
